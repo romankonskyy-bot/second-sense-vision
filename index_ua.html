@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Офіційний сайт проєкту «Друге відчуття: Очі» — інноваційної технології, що відкриває світ для людей із вадами зору за допомогою штучного інтелекту.">
+    <meta name="keywords" content="Друге відчуття, Second Sense, Друге відчуття: Очі, штучний інтелект для незрячих, допомога незрячим, інноваційні технології для зору, окуляри для незрячих, соціальний проєкт">
+    <title>Друге відчуття: Очі</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-800;
+        }
+        .text-braille {
+            font-family: 'Braille', monospace;
+        }
+        .hero-bg {
+            background-color: #8edcda; /* Бірюзовий */
+            background-image: url('logo.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .custom-gradient-1 {
+            background: linear-gradient(90deg, #6cbebb 0%, #8edcda 100%);
+        }
+        .custom-gradient-2 {
+            background: linear-gradient(90deg, #51a6a3 0%, #76c6c4 100%);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg rounded-b-xl backdrop-blur-md bg-opacity-80">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Головна навігація">
+            <a href="#home" class="flex items-center gap-3 font-bold text-2xl text-cyan-600" aria-current="page">
+                <span class="text-3xl" aria-label="Логотип проєкту Друге відчуття: Очі">👁️‍🗨️</span>
+                <span class="text-xl md:text-2xl">Друге відчуття: Очі</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-gray-700 font-semibold" role="menubar">
+                <a href="#home" class="hover:text-cyan-600 transition duration-300" role="menuitem">Головна</a>
+                <a href="#about" class="hover:text-cyan-600 transition duration-300" role="menuitem">Про проєкт</a>
+                <a href="#mission" class="hover:text-cyan-600 transition duration-300" role="menuitem">Місія</a>
+                <a href="#technology" class="hover:text-cyan-600 transition duration-300" role="menuitem">Технологія</a>
+                <a href="#stories" class="hover:text-cyan-600 transition duration-300" role="menuitem">Історії змін</a>
+                <a href="#support" class="hover:text-cyan-600 transition duration-300" role="menuitem">Підтримати</a>
+                <a href="#contact" class="hover:text-cyan-600 transition duration-300" role="menuitem">Контакти</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none" aria-label="Відкрити мобільне меню" aria-controls="mobile-menu" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg rounded-b-xl px-6 py-4" role="menu">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-cyan-600" role="menuitem">Головна</a>
+            <a href="#about" class="block py-2 text-gray-700 hover:text-cyan-600" role="menuitem">Про проєкт</a>
+            <a href="#mission" class="block py-2 text-gray-700 hover:text-cyan-600" role="menuitem">Місія</a>
+            <a href="#technology" class="block py-2 text-gray-700 hover:text-cyan-600" role="menuitem">Технологія</a>
+            <a href="#stories" class="block py-2 text-gray-700 hover:text-cyan-600" role="menuitem">Історії змін</a>
+            <a href="#support" class="block py-2 text-gray-700 hover:text-cyan-600" role="menuitem">Підтримати</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-cyan-600" role="menuitem">Контакти</a>
+        </div>
+    </header>
+
+    <main class="space-y-24">
+        <!-- Hero Section -->
+        <section id="home" class="relative hero-bg bg-cover bg-center text-white py-24 md:py-48">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-wide mb-4">
+                    Зробимо друге відчуття реальністю з "Друге відчуття: Очі"
+                </h1>
+                <p class="text-base md:text-lg max-w-3xl mx-auto mb-8 font-light">
+                    Компанія "Друге відчуття" відкриває нові можливості для людей із вадами зору через проєкт "Друге відчуття: Очі". Завдяки інноваційним технологіям ми допомагаємо бачити світ по-новому — чітко, впевнено, без бар’єрів.
+                </p>
+                <a href="#support" class="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105" aria-label="Перейти до секції підтримки проєкту">
+                    Підтримати проєкт
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container mx-auto px-6 py-12 md:py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">Про проєкт "Друге відчуття: Очі"</h2>
+                    <p class="text-gray-800 text-lg">
+                        "Друге відчуття: Очі" — це проєкт компанії "Друге відчуття", технологічна ініціатива, що відкриває світ для незрячих за допомогою штучного інтелекту. Ми створили перший прототип і тестуємо його, щоб зробити життя людей із вадами зору більш незалежним і комфортним.
+                    </p>
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-bullseye text-2xl text-cyan-600 mt-1" aria-label="Мета проєкту"></i>
+                            <div>
+                                <h3 class="font-bold text-gray-900">Мета</h3>
+                                <p class="text-gray-800">Розробка прототипу, який працює на основі штучного інтелекту та функціонує в офлайн-режимі, щоб забезпечити доступність у будь-яких умовах.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-robot text-2xl text-cyan-600 mt-1" aria-label="Технології проєкту"></i>
+                            <div>
+                                <h3 class="font-bold text-gray-900">Технології</h3>
+                                <p class="text-gray-800">Використовуємо аналіз фотографій, аудіоописи та передові алгоритми штучного інтелекту для створення зручного та ефективного інструменту.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-globe-americas text-2xl text-cyan-600 mt-1" aria-label="Користь проєкту"></i>
+                            <div>
+                                <h3 class="font-bold text-gray-900">Користь</h3>
+                                <p class="text-gray-800">Створюємо світ без бар’єрів, де кожен може вільно взаємодіяти з оточенням, незалежно від зорових обмежень.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center md:justify-end">
+                    <img src="logo.png" alt="Логотип проєкту 'Друге відчуття: Очі' - стилізоване око в руках." class="w-full h-auto rounded-3xl shadow-xl transition-transform transform hover:scale-105">
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section id="mission" class="bg-cyan-600 text-white py-16 md:py-24 rounded-3xl mx-6 md:mx-auto shadow-2xl">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Наша місія</h2>
+                <p class="text-lg md:text-xl max-w-4xl mx-auto leading-relaxed mb-6">
+                    Компанія "Друге відчуття" вірить, що зір — це не лише очі, а й можливість відчувати, творити та бути вільним. Через проєкт "Друге відчуття: Очі" ми поєднуємо передові технології з емпатією, щоб створити світ, де кожен має доступ до краси та можливостей життя. Наша мета — дати мільйонам незрячих і слабозорих людей нове цифрове відчуття.
+                </p>
+                <div class="text-left max-w-3xl mx-auto">
+                    <h3 class="text-2xl font-semibold mb-4">Проблема, яку ми вирішуємо:</h3>
+                    <ul class="list-disc list-inside text-gray-200 text-lg space-y-2">
+                        <li>За даними ВООЗ, у світі понад 36 мільйонів людей є повністю незрячими, а понад 200 мільйонів мають серйозні порушення зору. До 2050 року ці цифри можуть зрости майже вдвічі.</li>
+                        <li>У США, за даними CDC, близько 12 мільйонів дорослих віком від 40 років мають проблеми із зором, а 7 мільйонів американців мають серйозні порушення зору, які не виправляються окулярами чи лінзами.</li>
+                        <li>Незрячі та слабозорі люди часто стикаються з обмеженнями у повсякденному житті, від навігації до доступу до інформації, що знижує їхню незалежність.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Section -->
+        <section id="technology" class="container mx-auto px-6 py-12 md:py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">Технологія</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-gray-900">Як це працює:</h3>
+                    <p class="text-gray-800 text-lg">
+                        "Друге відчуття: Очі" від компанії "Друге відчуття" використовує штучний інтелект для аналізу зображень у реальному часі, перетворюючи візуальну інформацію на детальні аудіоописи. Наш прототип уже працює в онлайн-режимі, а офлайн-режим заплановано реалізувати в майбутньому, щоб забезпечити доступність навіть у віддалених регіонах. Алгоритми ШІ адаптуються до індивідуальних потреб користувачів, надаючи точні та зрозумілі описи оточення — від міських вулиць до природних пейзажів.
+                    </p>
+                    <ul class="space-y-4 font-medium pt-4">
+                        <li class="flex items-start gap-4">
+                            <i class="fas fa-wifi text-xl text-cyan-600 mt-1" aria-label="Офлайн-режим"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Офлайн-режим у планах:</h4>
+                                <p class="text-gray-800 font-normal">Незабаром технологія працюватиме без інтернету, що зробить її доступною всюди.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fas fa-fingerprint text-xl text-cyan-600 mt-1" aria-label="Персоналізація"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Персоналізація:</h4>
+                                <p class="text-gray-800 font-normal">ШІ вчиться розуміти потреби конкретного користувача.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fas fa-hand-holding-heart text-xl text-cyan-600 mt-1" aria-label="Простота використання"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Простота:</h4>
+                                <p class="text-gray-800 font-normal">Інтуїтивний інтерфейс, який легко використовувати людям будь-якого віку.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-8">
+                    <div class="p-8 bg-gray-100 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Спробуйте самі:</h3>
+                        <p class="text-gray-800 mb-6">
+                            Хочете відчути, як народжується другий зір? Приєднуйтесь до нашого Telegram-каналу — разом ми робимо перші кроки до платформи, що змінює життя!
+                        </p>
+                        <a href="#" class="inline-block custom-gradient-1 hover:custom-gradient-2 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105" aria-label="Приєднатися до Telegram-каналу проєкту">
+                            <i class="fab fa-telegram-plane mr-2" aria-label="Іконка Telegram"></i> Долучитися до Telegram-каналу
+                        </a>
+                        <p class="text-sm text-gray-600 mt-2">Протестуйте прототип та поділіться відгуками.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Макет пристрою:</h3>
+                        <p class="text-gray-800 mb-6">
+                            Ознайомтеся з макетом нашого прототипу — інноваційних smart-окулярів із вбудованою камерою та навушниками, які допомагають незрячим "бачити" світ через аудіоописи.
+                        </p>
+                        <img src="maket.jpg" alt="Прототип smart-окулярів з камерою, що допомагають незрячим." class="w-full h-auto rounded-3xl shadow-xl transition-transform transform hover:scale-105">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- For Whom Section -->
+        <section id="for-whom" class="bg-white py-12 md:py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">Для кого цей проєкт</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <article class="bg-gray-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300">
+                        <i class="fas fa-blind text-4xl text-cyan-600 mb-4" aria-label="Іконка незрячої людини"></i>
+                        <h3 class="font-bold text-2xl text-gray-900 mb-2">Незрячі та слабозорі</h3>
+                        <p class="text-gray-800">
+                            Ми шукаємо тих, хто бачить серцем. Хто хоче створити світ, де кожен має друге відчуття — і очі, що не залежать від зору.
+                        </p>
+                    </article>
+                    <!-- Card 2 -->
+                    <article class="bg-gray-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300">
+                        <i class="fas fa-code text-4xl text-cyan-600 mb-4" aria-label="Іконка розробки"></i>
+                        <h3 class="font-bold text-2xl text-gray-900 mb-2">Розробники</h3>
+                        <p class="text-gray-800">
+                            Ми шукаємо тих, хто бачить серцем. Хто хоче створити світ, де кожен має друге відчуття — і очі, що не залежать від зору.
+                        </p>
+                    </article>
+                    <!-- Card 3 -->
+                    <article class="bg-gray-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300">
+                        <i class="fas fa-handshake text-4xl text-cyan-600 mb-4" aria-label="Іконка партнерства"></i>
+                        <h3 class="font-bold text-2xl text-gray-900 mb-2">Партнери та інвестори</h3>
+                        <p class="text-gray-800">
+                            Ми шукаємо тих, хто бачить серцем. Хто хоче створити світ, де кожен має друге відчуття — і очі, що не залежать від зору.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stories Section -->
+        <section id="stories" class="bg-cyan-50 py-16 md:py-24">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Історії змін</h2>
+                <p class="text-gray-800 text-lg mb-12">Коли штучний інтелект стає відчуттям — змінюється все.</p>
+                <div class="grid md:grid-cols-3 gap-12">
+                    <!-- Story 1 -->
+                    <article class="bg-white p-8 rounded-3xl shadow-xl transition-transform transform hover:scale-105">
+                        <img src="traveler.jpg" alt="Щасливий мандрівник, який насолоджується видом на гору." class="rounded-2xl mb-6 w-full h-auto">
+                        <h3 class="font-bold text-2xl text-gray-900 mb-2"><i class="fas fa-globe-europe text-cyan-600 mr-2" aria-label="Іконка подорожей"></i> Світ у русі — мандрівник</h3>
+                        <p class="text-gray-800">
+                            Мандрівник, який втратив зір, знову відчуває свободу. Завдяки "Друге відчуття: Очі" від компанії "Друге відчуття" він спокійно орієнтується у лабіринтах мегаполісів, перетинає шумні перехрестя, піднімається на вершини гір. Його голосовий провідник шепоче: "попереду відкрита долина, сонце торкається горизонту..." — і це стає новою реальністю.
+                        </p>
+                        <p class="text-gray-600 italic mt-4">"Я знову мандрую. Не очима — душею."</p>
+                    </article>
+                    <!-- Story 2 -->
+                    <article class="bg-white p-8 rounded-3xl shadow-xl transition-transform transform hover:scale-105">
+                        <img src="artist.jpg" alt="Художниця, яка малює в студії." class="rounded-2xl mb-6 w-full h-auto">
+                        <h3 class="font-bold text-2xl text-gray-900 mb-2"><i class="fas fa-palette text-cyan-600 mr-2" aria-label="Іконка творчості"></i> Творчість — художниця без зору</h3>
+                        <p class="text-gray-800">
+                            Колись фарби були лише відчуттям у пальцях. Тепер — це емоція, підсилена словами: "тут лінія горизонту, тут дерево, що тягнеться до неба". Художниця створює картини, керуючись не очима, а голосом ШІ від "Друге відчуття: Очі".
+                        </p>
+                        <p class="text-gray-600 italic mt-4">"Мої картини — це музика кольору, яку я чую."</p>
+                    </article>
+                    <!-- Story 3 -->
+                    <article class="bg-white p-8 rounded-3xl shadow-xl transition-transform transform hover:scale-105">
+                        <img src="teacher.jpg" alt="Вчителька посміхається в класі." class="rounded-2xl mb-6 w-full h-auto">
+                        <h3 class="font-bold text-2xl text-gray-900 mb-2"><i class="fas fa-chalkboard-teacher text-cyan-600 mr-2" aria-label="Іконка освіти"></i> Освіта — вчитель, що не бачить</h3>
+                        <p class="text-gray-800">
+                            Вчитель пояснює учням, як відчути хімію або географію не очима, а розумом. З "Друге відчуття: Очі" від компанії "Друге відчуття" він використовує візуальні підказки, щоб “перекладати” графіки та карти в прості звуки. І це відкриває двері до науки там, де їх раніше не було.
+                        </p>
+                        <p class="text-gray-600 italic mt-4">"Я вчу не бачити, а відчувати науку."</p>
+                    </article>
+                </div>
+                <div class="text-center mt-16">
+                    <p class="text-lg text-gray-800 max-w-2xl mx-auto">
+                        "Друге відчуття: Очі" від компанії "Друге відчуття" — це не просто технологія. Це новий рівень свободи, творчості та взаємодії зі світом для тих, хто не бачить очима, але бачить глибше.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Section -->
+        <section id="support" class="container mx-auto px-6 py-12 md:py-20 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Підтримати проєкт</h2>
+            <p class="text-lg text-gray-800 max-w-2xl mx-auto mb-12">
+                Це не просто технологія. Це новий спосіб бачити. Відчувати. Жити. Ми — Друге відчуття. І ми відкриваємо очі там, де їх ніколи не було.
+            </p>
+            <div class="bg-gray-100 p-8 md:p-12 rounded-3xl shadow-2xl">
+                <p class="text-gray-800 font-medium max-w-3xl mx-auto mb-8">
+                    Ми — технологія з душею. Ми створюємо нове цифрове відчуття для тих, хто бачить серцем. "Друге відчуття: Очі" — це не просто інструмент. Це свобода, гідність і нова реальність для мільйонів.
+                </p>
+                <h3 class="font-bold text-2xl text-gray-900 mb-4">Ваша підтримка допоможе нам:</h3>
+                <ul class="list-disc list-inside text-gray-800 text-left max-w-md mx-auto mb-12">
+                    <li class="mb-2">Реалізувати прототип, що працює офлайн, без залежності від інтернету</li>
+                    <li class="mb-2">Розвинути штучний інтелект, адаптований спеціально під потреби незрячих</li>
+                    <li class="mb-2">Масштабувати рішення на міжнародному рівні</li>
+                    <li class="mb-2">Побудувати екосистему, де кожен отримає доступ до безпечного та гідного цифрового супроводу</li>
+                </ul>
+                <p class="text-lg text-gray-800 font-medium mb-12">
+                    Інвестуючи в "Друге відчуття: Очі", ви стаєте частиною технологічної революції з людським обличчям від компанії "Друге відчуття".
+                </p>
+                <p class="text-xl font-bold text-cyan-700 italic mb-12">
+                    "Ми не просто створюємо продукт — ми відкриваємо світ тим, хто ніколи його не бачив."
+                </p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <div class="flex flex-col items-center">
+                        <a href="#" class="custom-gradient-1 hover:custom-gradient-2 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105" aria-label="Фінансова підтримка проєкту">
+                            <i class="fas fa-donate mr-2" aria-label="Іконка фінансової підтримки"></i> Підтримати фінансово
+                        </a>
+                        <p class="text-sm text-gray-600 mt-2">Допоможіть профінансувати розробку.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <a href="#" class="custom-gradient-1 hover:custom-gradient-2 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105" aria-label="Стати партнером проєкту">
+                            <i class="fas fa-handshake mr-2" aria-label="Іконка партнерства"></i> Стати партнером
+                        </a>
+                        <p class="text-sm text-gray-600 mt-2">Співпрацюйте для масштабування проєкту.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <a href="#" class="custom-gradient-1 hover:custom-gradient-2 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105" aria-label="Долучитися як розробник">
+                            <i class="fas fa-user-plus mr-2" aria-label="Іконка долучення розробника"></i> Долучитись як розробник
+                        </a>
+                        <p class="text-sm text-gray-600 mt-2">Приєднуйтесь до команди інноваторів.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container mx-auto px-6 py-12 md:py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">Контакти</h2>
+            <p class="text-lg text-gray-800 max-w-2xl mx-auto mb-12">Напишіть нам. Ми відповідаємо не просто словами — ми відповідаємо дією.</p>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="bg-gray-100 p-8 rounded-3xl shadow-lg">
+                    <h3 class="font-bold text-2xl text-gray-900 mb-4">Зв’яжіться з нами</h3>
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-semibold mb-2">Ім’я</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 transition duration-300" placeholder="Ваше ім'я" required aria-describedby="name-desc">
+                            <p id="name-desc" class="text-sm text-gray-600 mt-1">Введіть ваше ім’я для зв’язку.</p>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 transition duration-300" placeholder="Ваш Email" required aria-describedby="email-desc">
+                            <p id="email-desc" class="text-sm text-gray-600 mt-1">Введіть ваш email для відповіді.</p>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-semibold mb-2">Повідомлення</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 transition duration-300" placeholder="Ваше повідомлення..." required aria-describedby="message-desc"></textarea>
+                            <p id="message-desc" class="text-sm text-gray-600 mt-1">Опишіть ваш запит або пропозицію.</p>
+                        </div>
+                        <button type="submit" class="w-full custom-gradient-1 hover:custom-gradient-2 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105" aria-label="Відправити повідомлення через форму">
+                            Відправити
+                        </button>
+                    </form>
+                </div>
+                <div class="space-y-6 text-center md:text-left">
+                    <div class="p-6 bg-cyan-100 rounded-2xl shadow-md">
+                        <h4 class="font-bold text-xl text-cyan-800">Email</h4>
+                        <p class="text-cyan-700">secondsensevision.info@gmail.com</p>
+                    </div>
+                    <div class="p-6 bg-cyan-100 rounded-2xl shadow-md">
+                        <h4 class="font-bold text-xl text-cyan-800">Соціальні мережі</h4>
+                        <div class="flex justify-center md:justify-start gap-6 mt-4">
+                            <a href="#" class="text-3xl text-gray-600 hover:text-cyan-600 transition duration-300" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-3xl text-gray-600 hover:text-cyan-600 transition duration-300" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-3xl text-gray-600 hover:text-cyan-600 transition duration-300" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8 items-center text-center md:text-left">
+            <!-- Logo and Slogan -->
+            <div class="flex flex-col items-center md:items-start space-y-4">
+                <div class="flex items-center gap-3 font-bold text-2xl text-cyan-400">
+                    <span class="text-3xl" aria-label="Логотип проєкту Друге відчуття: Очі">👁️‍🗨️</span>
+                    <span class="text-xl md:text-2xl">Друге відчуття: Очі</span>
+                </div>
+                <p class="text-gray-400">Світ — це більше, ніж видно. Це те, що відчуваєш. Разом ми відкриваємо його для всіх.</p>
+            </div>
+            
+            <!-- Language Switcher -->
+            <div class="flex flex-col items-center md:items-center">
+                <p class="text-gray-400 mb-2">Мова:</p>
+                <div class="flex gap-4">
+                    <a href="index_ua.html" class="hover:text-cyan-400 transition duration-300 text-2xl" aria-label="Ukrainian">🇺🇦</a>
+                    <a href="index.html" class="hover:text-cyan-400 transition duration-300 text-2xl" aria-label="English">🇺🇸</a>
+                    <a href="#" class="hover:text-cyan-400 transition duration-300 text-2xl" aria-label="中文">🇨🇳</a>
+                    <a href="#" class="hover:text-cyan-400 transition duration-300 text-2xl" aria-label="العربية">🇸🇦</a>
+                    <a href="#" class="hover:text-cyan-400 transition duration-300 text-2xl" aria-label="日本語">🇯🇵</a>
+                    <a href="#" class="hover:text-cyan-400 transition duration-300 text-2xl" aria-label="हिंदी">🇮🇳</a>
+                </div>
+            </div>
+
+            <!-- Author and Copyright -->
+            <div class="text-center md:text-right space-y-2">
+                <p class="text-gray-400">Автор ідеї: Роман Конський</p>
+                <p class="text-gray-500 text-sm">© 2025 Друге відчуття. Усі права захищено.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Hide mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+</html>
